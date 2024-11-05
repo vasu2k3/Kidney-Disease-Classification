@@ -1,1 +1,13 @@
 artifacts/*
+prediction_experimental.py
+app_experimental.py
+common_experimental.py
+index_experimental.html
+model/*
+inputImage.jpg
+prediction_experimental
+common_experimental
+logs/*
+src/cnnClassifier/pipeline/__pycache__/prediction_experimental.cpython-39.pyc
+src/cnnClassifier/utils/__pycache__/common_experimental.cpython-39.pyc
+

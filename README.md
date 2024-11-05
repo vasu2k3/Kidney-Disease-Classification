@@ -17,18 +17,18 @@
 ### STEPS:
 
 ### Clone the repository
-
+```bash
 git clone https://github.com/vasu2k3/Kidney-Disease-Classification
-
+```
 ### STEP 01- Create a conda environment after opening the repository
-
+```bash
 conda create -n kidney python=3.9 -y
 conda activate kidney
-
+```
 
 ### STEP 02- install the requirements
-
+```bash
 pip install -r requirements.txt
-
+```
 
 
