@@ -35,7 +35,7 @@ pip install -r requirements.txt
 
 # MLflow
 dagshub
-
+-used for evaluating the model
 ```bash
 import dagshub
 dagshub.init(repo_owner='vasanth.vasu2002', repo_name='Kidney-Disease-Classification', mlflow=True)
@@ -46,6 +46,7 @@ with mlflow.start_run():
   mlflow.log_metric('metric name', 1)
 ```
 ## DVC Commands
+-used for not repeating the same unnecessary steps in pipeline 
 ```bash 
 dvc init
 ```
@@ -55,3 +56,36 @@ dvc repro
 ```bash
 dvc dag
 ```
+
+# AWS CI/CD Deployment
+
+## 1. Login to AWS console.
+
+## 2. Create IAM user for deployment
+
+	#with specific access
+
+	1. EC2 access : It is virtual machine
+
+	2. ECR: Elastic Container registry to save your docker image in aws
+
+
+	#Description: About the deployment
+
+	1. Build docker image of the source code
+
+	2. Push your docker image to ECR
+
+	3. Launch Your EC2 
+
+	4. Pull Your image from ECR in EC2
+
+	5. Lauch your docker image in EC2
+
+	#Policy:
+
+	1. AmazonEC2ContainerRegistryFullAccess
+
+	2. AmazonEC2FullAccess
+
+	

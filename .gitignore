@@ -3,7 +3,6 @@ prediction_experimental.py
 app_experimental.py
 common_experimental.py
 index_experimental.html
-model/*
 inputImage.jpg
 prediction_experimental
 common_experimental
@@ -176,4 +175,3 @@ cython_debug/
 
 .dvcignore
 dvc.lock
-
