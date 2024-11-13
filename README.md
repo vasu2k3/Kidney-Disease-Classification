@@ -23,12 +23,30 @@ git clone https://github.com/vasu2k3/Kidney-Disease-Classification
 ### STEP 01- Create a conda environment after opening the repository
 ```bash
 conda create -n kidney python=3.9 -y
+```
+```bash
 conda activate kidney
 ```
 
 ### STEP 02- install the requirements
 ```bash
 pip install -r requirements.txt
+```
+# MLflow
+dagshub
+
+MLFLOW_TRACKING_URI=https://dagshub.com/vasanth.vasu2002/Kidney-Disease-Classification.mlflow
+MLFLOW_TRACKING_USERNAME=vasanth.vasu2002
+MLFLOW_TRACKING_PASSWORD=665abe144f104cd8c3a6dbf6ee7164c6c7fedb98
+python script.py
+```bash
+export MLFLOW_TRACKING_URL=https://dagshub.com/vasanth.vasu2002/Kidney-Disease-Classification.mlflow
+```
+```bash
+export MLFLOW_TRACKING_USERNAME=vasanth.vasu2002
+```
+```bash
+export MLFLOW_TRACKING_PASSWORD=665abe144f104cd8c3a6dbf6ee7164c6c7fedb98
 ```
 
 
