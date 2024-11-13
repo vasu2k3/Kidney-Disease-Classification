@@ -32,21 +32,19 @@ conda activate kidney
 ```bash
 pip install -r requirements.txt
 ```
+
 # MLflow
 dagshub
 
-MLFLOW_TRACKING_URI=https://dagshub.com/vasanth.vasu2002/Kidney-Disease-Classification.mlflow
-MLFLOW_TRACKING_USERNAME=vasanth.vasu2002
-MLFLOW_TRACKING_PASSWORD=665abe144f104cd8c3a6dbf6ee7164c6c7fedb98
-python script.py
 ```bash
-export MLFLOW_TRACKING_URL=https://dagshub.com/vasanth.vasu2002/Kidney-Disease-Classification.mlflow
+import dagshub
+dagshub.init(repo_owner='vasanth.vasu2002', repo_name='Kidney-Disease-Classification', mlflow=True)
+
+import mlflow
+with mlflow.start_run():
+  mlflow.log_param('parameter name', 'value')
+  mlflow.log_metric('metric name', 1)
 ```
-```bash
-export MLFLOW_TRACKING_USERNAME=vasanth.vasu2002
-```
-```bash
-export MLFLOW_TRACKING_PASSWORD=665abe144f104cd8c3a6dbf6ee7164c6c7fedb98
-```
+
 
 
